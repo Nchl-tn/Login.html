@@ -13,7 +13,7 @@
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     }
 
-    body {
+  body {
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
       min-height: 100vh;
       display: flex;
@@ -23,7 +23,7 @@
       color: #e2e8f0;
     }
 
-    .container {
+  .container {
       background: #1e293b;
       border-radius: 20px;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
@@ -33,13 +33,13 @@
       border: 1px solid #334155;
     }
 
-    .header {
+  .header {
       background: linear-gradient(90deg, #0ea5e9, #0284c7);
       padding: 28px 24px;
       text-align: center;
     }
 
-    .logo {
+  .logo {
       font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.5px;
@@ -47,19 +47,20 @@
       margin-bottom: 6px;
     }
 
-    .tagline {
+  .tagline {
       font-size: 13px;
       color: #bae6fd;
       font-weight: 500;
       line-height: 1.4;
     }
 
-    .tabs {
+  .tabs {
       display: flex;
       background: #0f172a;
     }
 
-    .tab {
+    
+  .tab {
       flex: 1;
       padding: 16px;
       text-align: center;
@@ -71,36 +72,36 @@
       border-bottom: 3px solid transparent;
     }
 
-    .tab.active {
+  .tab.active {
       color: #38bdf8;
       border-bottom-color: #0ea5e9;
       background: #1e293b;
     }
 
-    .form-container {
+  .form-container {
       padding: 32px 28px;
     }
 
-    .form {
+   .form {
       display: none;
     }
 
-    .form.active {
+  .form.active {
       display: block;
     }
 
-    h2 {
+  h2 {
       text-align: center;
       margin-bottom: 24px;
       font-size: 22px;
       color: #f1f5f9;
     }
 
-    .input-group {
+  .input-group {
       margin-bottom: 18px;
     }
 
-    label {
+  label {
       display: block;
       margin-bottom: 6px;
       font-size: 13px;
@@ -108,7 +109,7 @@
       font-weight: 500;
     }
 
-    input {
+  input {
       width: 100%;
       padding: 13px 16px;
       background: #0f172a;
@@ -119,17 +120,17 @@
       transition: all 0.2s;
     }
 
-    input:focus {
+   input:focus {
       outline: none;
       border-color: #0ea5e9;
       box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
     }
 
-    input::placeholder {
+  input::placeholder {
       color: #64748b;
     }
 
-    button {
+  button {
       width: 100%;
       padding: 14px;
       background: linear-gradient(90deg, #0ea5e9, #0284c7);
@@ -143,12 +144,12 @@
       margin-top: 8px;
     }
 
-    button:hover {
+   button:hover {
       background: linear-gradient(90deg, #0284c7, #0369a1);
       transform: translateY(-1px);
     }
 
-    .message {
+   .message {
       margin-top: 16px;
       padding: 12px;
       border-radius: 8px;
@@ -157,39 +158,39 @@
       display: none;
     }
 
-    .message.success {
+  .message.success {
       background: rgba(34, 197, 94, 0.15);
       color: #4ade80;
       border: 1px solid rgba(34, 197, 94, 0.3);
       display: block;
     }
 
-    .message.error {
+  .message.error {
       background: rgba(239, 68, 68, 0.15);
       color: #f87171;
       border: 1px solid rgba(239, 68, 68, 0.3);
       display: block;
     }
 
-    .switch-text {
+   .switch-text {
       text-align: center;
       margin-top: 22px;
       font-size: 14px;
       color: #94a3b8;
     }
 
-    .switch-text a {
+  .switch-text a {
       color: #38bdf8;
       text-decoration: none;
       font-weight: 600;
       cursor: pointer;
     }
 
-    .switch-text a:hover {
+  .switch-text a:hover {
       text-decoration: underline;
     }
 
-    .footer {
+   .footer {
       text-align: center;
       padding: 16px;
       font-size: 12px;
@@ -207,13 +208,12 @@
     </div>
 
     <!-- Tabs -->
-    <div class="tabs">
+  <div class="tabs">
       <div class="tab active" onclick="switchTab('login')">Login</div>
       <div class="tab" onclick="switchTab('signup')">Create Account</div>
     </div>
-
-    <div class="form-container">
-      <!-- Login Form -->
+   <div class="form-container">
+     <!-- Login Form -->
       <div id="loginForm" class="form active">
         <h2>Welcome Back</h2>
         <form onsubmit="handleLogin(event)">
@@ -233,8 +233,8 @@
         </div>
       </div>
 
-      <!-- Sign Up Form -->
-      <div id="signupForm" class="form">
+     <!-- Sign Up Form -->
+  <div id="signupForm" class="form">
         <h2>Create Account</h2>
         <form onsubmit="handleSignup(event)">
           <div class="input-group">
@@ -262,7 +262,7 @@
       </div>
     </div>
 
-    <div class="footer">
+   <div class="footer">
       © 2026 Mifibot — Miniature Fire-Extinguishing Robot
     </div>
   </div>
